@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: antiquewhite;
+    height: 50px;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* background-color: red; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.menu {
+    background-color:antiquewhite;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 150px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    transform: translateX(-120%);
+    transition: transform 0.4s;
+}
+
+.menu-show {
+    transform: translateX(0);
+}
+
+.bx-menu {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (min-width: 700px) {
+    body {
+        /* background-color: blue; */
+    }
+
+    .bx-menu {
+        /* display: none; */
+        visibility: hidden;
+    }
+
+    .menu {
+        /* background-color: red; */
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        transform: translateY(0);
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
