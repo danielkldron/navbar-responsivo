@@ -52,7 +52,7 @@ section {
     gap: 1.5rem;
 
     transform: translateX(-100%);
-    transition: transform 0.4s;
+    transition: transform 0.3s;
 }
 
 .menu-show {
@@ -73,19 +73,15 @@ section {
     }
 
     .menu {
-        /* background-color: red; */
         position: static;
         width: auto;
         height: auto;
         flex-direction: row;
         justify-content: space-between;
         transform: translateY(0);
+        
     }
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
 
